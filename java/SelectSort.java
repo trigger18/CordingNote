@@ -8,7 +8,7 @@ public class Exam_01 {
 		String str = br.readLine();
 		String[] strArr = str.split(",");
 		int[] num = new int[strArr.length];
-		for (int i = 0; i < num.length; i++) {
+		for (int i = 0; i < num.length-1; i++) {
 			num[i] = Integer.parseInt(strArr[i]);
 		}
 		System.out.println();
