@@ -12,9 +12,9 @@ public class Total {
 		String res = change(num[0], num[1]);
 		System.out.println(res);
 	}//end main
-	public static String change(String c, String d) {
-		String a = c.substring(0,1).toUpperCase() +c.substring(1);
-		String b = d.substring(0,1).toUpperCase() + d.substring(1);
+	public static String change(String a, String b) {
+		a = a.substring(0,1).toUpperCase() + a.substring(1);
+		b = b.substring(0,1).toUpperCase() + b.substring(1);
 		return a + " " + b;
 	}//end change()
 }// end class	
