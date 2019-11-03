@@ -23,9 +23,9 @@ public class PrimeNall {
 				}
 			}
 		}
+		System.out.println("1부터 " + num + "까지의 소수는 : ");
 		for (int g : pna) {
 			if (g != 0) {
-				System.out.println("1부터 " + num + "까지의 소수는 : ");
 				System.out.print(g + ", ");
 			}
 		}
