@@ -6,7 +6,25 @@
 <meta charset="UTF-8">
 <title>ajax_login</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#btn').on('click', process);
+});
+
+function process() {
+	var param = $('form').serialize();
+	$.ajax({
+		type : 'POST',
+		dataType : 'text',
+		data : param,
+		//data : 'id=' + id + '&pass=' + pass,
+		url : 'loginProcess',
+		success : function(res) {
+			$('#div').html(res);
+		}
+	})
+}
+</script>
 </head>
 <body>
 	<form>
