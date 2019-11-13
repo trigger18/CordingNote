@@ -1,3 +1,5 @@
+---  JSP  ---
+
 <!-- 페이지 번호 -->
    <div class="pagelist">
             <!-- 이전 출력 시작 -->
@@ -50,6 +52,8 @@
             </c:when>
          </c:choose>
 <!-- /페이지 번호 -->
+
+---  Java  ---
 
 public class PageDTO {
 	private int currentPage; // 현재페이지
