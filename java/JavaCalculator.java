@@ -81,7 +81,7 @@ public class JavaCalculator extends JFrame implements ActionListener {
 		}
 	}// end actionPerformed()
 
-	public JavaCalculator {
+	public JavaCalculator() {
 		// 생성자 , UI 모양 설정
 		super("Java 계산기");
 		super.setResizable(true);
